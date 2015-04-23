@@ -43,15 +43,11 @@ nosetests.xml
 coverage.xml
 *,cover
 
-# Translations
-*.mo
-*.pot
+# Mac OS X Finder
+.DS_Store
+._*
+**/._*
 
-# Django stuff:
-*.log
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-target/
+# NFS Files
+.nfs*
+**/.nfs*
