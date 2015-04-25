@@ -1,5 +1,5 @@
 # environment
-[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)]()
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/mattgiguere/environment/blob/master/LICENSE)
 
 **Custom Environment Settings**
 
