@@ -1,0 +1,248 @@
+
+
+alias mysql       '/usr/local/mysql/bin/mysql'
+alias mysqladmin  '/usr/local/mysql/bin/mysqladmin'
+alias subl        '/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+
+alias ipynb       'ipython notebook --browser=Firefox'
+
+#alias emacs       'open -a /usr/local/Cellar/emacs/24.3/Emacs.app'
+#alias oemacs      '/usr/bin/emacs' #the old emacs
+alias irw         'xgterm -sb -sl 5000 -geometry 83x64&'
+alias aquamacs    'open -a /Applications/Aquamacs\ Emacs.app'
+alias wrangle     'open -a textwrangler'
+alias smultron    'open -a smultron'
+alias smul    'open -a smultron'
+alias COMP	  'cd ~/Documents/Yale/COMPUTATIONAL/'
+alias atmo        'cd Documents/Yale/ATMOSPHERES/HD209458b/CiRTM/'
+alias ctqs        'cd ~/Documents/ASTROPHYSICS/RESEARCH/OBSERVING/CHIRON/queues'
+
+alias up          'cd ../'
+alias cp          'cp -iv'
+alias rm          'rm -iv'
+alias mv          'mv -iv'
+alias gzip        'gzip -Nv'
+alias ?           'idlhelp'
+alias burn 'hdiutil burn -verbose'                                         
+alias eject 'drutil tray eject'
+alias xt 'xterm -sb -sl 5000 -rv &'  
+
+# list only directories:                  
+alias ldir 'ls -l | egrep "^d"'                       
+
+#AMAZON AWS
+alias sshaws      'ssh -p22 -i ~/.ssh/AmazonAws.pem ec2-user@52.11.107.12 -XY'
+
+#Yale OMEGA
+alias sshomega    'ssh -p22 mjg22@omega.hpc.yale.edu'
+alias sftpomega   'sftp -oPort=22 mjg22@omega.hpc.yale.edu'
+
+#UTAH
+alias sshember    'ssh u0852358@ember7.chpc.utah.edu -XY'
+
+#CTIO
+alias sshct1      'ssh -p22 observer@ctimac1.ctio.noao.edu -Y'
+alias sshct1m      'ssh -p22 matt@ctimac1.ctio.noao.edu -Y'
+alias sftpct1      'sftp -p22 observer@ctimac1.ctio.noao.edu:CPS_SCRIPTS'
+
+alias sshct2      'ssh -p22 observer@ctimac2.ctio.noao.edu -Y'
+alias sftpct2     'sftp -oPort=22 observer@ctimac2.ctio.noao.edu'
+alias sshct2m      'ssh -p22 matt@ctimac2.ctio.noao.edu -Y'
+alias sftpct2m    'sftp -oPort=22 matt@ctimac2.ctio.noao.edu'
+
+alias sshct3      'ssh -p22 observer@ctimac3.ctio.noao.edu -Y'
+alias sftpct3     'sftp -oPort=22 observer@ctimac3.ctio.noao.edu'
+alias sshct3m      'ssh -p22 matt@ctimac3.ctio.noao.edu -Y'
+alias sftpct3m    'sftp -oPort=22 matt@ctimac3.ctio.noao.edu'
+alias sshcte      'ssh -p22 observer@ctioe1.ctio.noao.edu -XY'
+
+alias sshct4      'ssh -p22 observer@ctimac4.ctio.noao.edu -Y'
+alias sftpct4     'sftp -oPort=22 observer@ctimac4.ctio.noao.edu'
+alias sshct4m      'ssh -p22 matt@ctimac4.ctio.noao.edu -Y'
+alias sftpct4m    'sftp -oPort=22 matt@ctimac4.ctio.noao.edu'
+
+#Yale:
+alias sshech      'ssh matt@echelle.astro.yale.edu -Y'
+alias sshecha     'ssh admin@echelle.astro.yale.edu -Y'
+
+alias sshharr     'ssh matt@harrison.astro.yale.edu -Y'
+alias sshharra    'ssh admin@harrison.astro.yale.edu -Y'
+
+alias sshosca      'ssh -p218 admin@oscar.astro.yale.edu -Y'
+alias sshosc       'ssh -p218 matt@oscar.astro.yale.edu -Y'
+
+alias sshplan     'ssh -p 218 admin@planets.astro.yale.edu -Y'
+alias sshara      'ssh -p 218 aramis.astro.yale.edu -Y'
+alias sftpara     'sftp -oPort=218 aramis.astro.yale.edu'
+alias ssharamg      'ssh -p 218 mattgiguere@aramis.astro.yale.edu -Y'
+alias ssharatc      'ssh -p 218 testchiron@aramis.astro.yale.edu -Y'
+alias sftparamg     'sftp -oPort=218 mattgiguere@aramis.astro.yale.edu'
+
+alias sshcel      'ssh matt@cecilia.astro.yale.edu -Y'
+alias sshcela      'ssh admin@cecilia.astro.yale.edu -Y'
+
+alias sshpor      'ssh -p22 porthos.astro.yale.edu -Y'
+
+alias sshalb      'ssh -p218 matt@albert.astro.yale.edu -Y'
+alias sftpalb	  'sftp -oPort=218 matt@albert.astro.yale.edu'
+alias sshalba      'ssh -p218 admin@albert.astro.yale.edu -Y'
+alias sftpalba	  'sftp -oPort=218 admin@albert.astro.yale.edu'
+
+alias sshexo      'ssh -p 218 exoplanets.astro.yale.edu -Y'
+alias sshexoa     'ssh -p 218 admin@exoplanets.astro.yale.edu -Y'
+alias sftpexo     'sftp -oPort=218 exoplanets.astro.yale.edu'
+alias sftpexoa     'sftp -oPort=218 admin@exoplanets.astro.yale.edu'
+
+alias sshsaya      'ssh -p218 admin@sayari.astro.yale.edu -Y'
+alias sshsay      'ssh -p218 matt@sayari.astro.yale.edu -Y'
+alias sshpiaa      'ssh -p218 admin@pianeti.astro.yale.edu -Y'
+alias sshpia      'ssh -p218 matt@pianeti.astro.yale.edu -Y'
+alias sftppia     'sftp -oPort=218 matt@pianeti.astro.yale.edu'
+
+alias sshgann     'ssh mjg22@gannett.astro.yale.edu -Y'
+
+alias sshterr     'ssh mjg22@terrapin.astro.yale.edu -Y'
+alias sshtort     'ssh mjg22@tortoise.astro.yale.edu -Y'
+alias sshturt     'ssh mjg22@turtle.astro.yale.edu -Y'
+
+alias sshlo       'ssh Lothlorien.local'
+alias sftplo      'sftp Lothlorien.local'
+
+alias ssh55        'ssh matt@55cnc.astro.yale.edu -Y'
+alias sftp55       'sftp matt@55cnc.astro.yale.edu'
+
+alias ssh55a        'ssh admin@55cnc.astro.yale.edu -Y'
+alias sftp55a       'sftp admin@55cnc.astro.yale.edu'
+
+alias ssh47        'ssh matt@47uma.astro.yale.edu -Y'
+alias sftp47       'sftp matt@47uma.astro.yale.edu'
+alias ssh47a        'ssh admin@47uma.astro.yale.edu -Y'
+
+alias sshcen       'ssh -p22 matt@centauri.astro.yale.edu -Y'
+alias sshcena      'ssh -p22 admin@centauri.astro.yale.edu -Y'
+alias sftpcen      'sftp matt@centauri.astro.yale.edu -Y'
+
+alias sshring      'ssh matt@ring.astro.yale.edu -Y'
+alias sftpring     'sftp matt@ring.astro.yale.edu'
+
+alias sshprox      'ssh -p22 matt@proxima.astro.yale.edu -Y'
+alias sftpprox     'sftp matt@proxima.astro.yale.edu'
+alias sshproxa      'ssh -p22 admin@proxima.astro.yale.edu -Y'
+alias sftpproxa     'sftp admin@proxima.astro.yale.edu'
+
+alias sshtau        'ssh -p22 matt@tauboo.astro.yale.edu -Y'
+alias sshtaua        'ssh -p22 admin@tauboo.astro.yale.edu -Y'
+alias sftptau       'sftp -oPort=22 tauboo.astro.yale.edu'
+alias sshtautc      'ssh -p22 testchiron@tauboo.astro.yale.edu -Y'
+
+#alias ssh47       'ssh mgiguere@47uma.sfsu.edu -Y'
+#alias sftp47      'sftp mgiguere@47uma.sfsu.edu'
+
+#alias sshcen      'ssh mgiguere@centauri.sfsu.edu -Y'
+#alias sshfcen      'ssh fischer@centauri.sfsu.edu -Y'
+#alias sftpcen     'sftp mgiguere@centauri.sfsu.edu'
+
+#alias sshring     'ssh mgiguere@ring.sfsu.edu -Y'
+#alias sftpring    'sftp mgiguere@ring.sfsu.edu'
+
+#alias ssh55       'ssh mgiguere@55cnc.sfsu.edu -X'
+#alias sftp55      'sftp mgiguere@55cnc.sfsu.edu'
+
+#alias sshtau      'ssh mgiguere@tauceti.sfsu.edu -Y'
+#alias sftptau     'sftp mgiguere@tauceti.sfsu.edu'
+
+#alias sshel       'ssh mgiguere@elrond.sfsu.edu -Y'
+#alias sftpel      'sftp mgiguere@elrond.sfsu.edu'
+
+#alias sshgan      'ssh mgiguere@gandalf.sfsu.edu -Y'
+#alias sftpgan     'sftp mgiguere@gandalf.sfsu.edu'
+
+#alias sshexo      'ssh mgiguere@exoplanets.sfsu.edu'
+#alias sftpexo     'sftp mgiguere@exoplanets.sfsu.edu'
+
+#alias sshes      'ssh mgiguere@estrella.sfsu.edu -Y'
+#alias sftpes     'sftp mgiguere@estrella.sfsu.edu'
+
+#alias sshth       'ssh mgiguere@th123-11.sfsu.edu'
+#alias sftpth      'sftp mgiguere@th123-11.sfsu.edu'
+
+#alias sshquark    'ssh mgiguere@quark.sfsu.edu'
+#alias sftpquark   'sftp mgiguere@quark.sfsu.edu'
+
+#alias sshew       'ssh ew@etoile.berkeley.edu'
+
+alias sshian       'ssh ew@ian.berkeley.edu -Y'
+alias sshfor       'ssh ew@fornax.berkeley.edu -Y'
+alias sftpfor      'sftp ew@fornax.berkeley.edu'
+
+alias sshPEN       'ssh PENSIEVE.local -Y'
+alias sftpPEN      'sftp PENSIEVE.local'
+
+
+alias m1 cd /mir1/          
+alias m1l cd /mir1/logsheets
+alias m1i cd /mir1/iodspec   
+alias m5 cd /mir5/   
+alias m5i cd /mir5/iodspec                             
+alias m5l cd /mir5/logsheets               
+alias m6 cd /mir6/               
+alias m6l cd /mir6/logsheets         
+alias m6i cd /mir6/iodspec               
+alias m7 cd /mir7/              
+alias m76 cd /mir7/reduce_d6new            
+alias m78 cd /mir7/reduce_d8              
+alias howard cd /home/isaacson/                            
+
+#alias fish  'cd /home/fischer'
+alias wrangle 'open -a TextWrangler'                                        
+
+
+alias sshjam      'ssh rjm24@hypatia.unh.edu'
+
+alias sshplato    'ssh user@plato.ucolick.org -Y'
+alias sftpplato   'sftp user@plato.ucolick.org -Y'
+alias xo          'cd ~/Documents/SFSU/research/EXO'
+alias exo         'cd ~/Documents/PHYSICS/SFSU/research/exo'
+alias exoidl      'cd /Users/matt/idl/exoidl/'
+alias xoi         'cd /Users/matt/idl/exoidl/'
+alias jack        'cd ~/Documents/SFSU/education/2009Spring/Jackson'
+
+alias ai405        'cd ~/idl/405/'
+alias 405          'cd /Users/matt/Documents/PHYSICS/SFSU/education/Fall2007/A405/ '
+
+alias idlhelp      'open -a /Applications/rsi/idl_6.3/IDLHelp.app'
+
+
+alias math         '/Applications/Mathematica6/Mathematica.app/Contents/MacOS/MathKernel'
+alias i2p          'sh /Applications/i2p/i2prouter start'
+alias i2pfire      'open -a firefox http://localhost:7657/index.jsp'
+alias i2poff       'sh /Applications/i2p/i2prouter stop'
+alias i2phex       'open /Applications/i2phex_0.1.1.38/launchi2phex.jar'
+
+alias ithy         'cd /Volumes/HYPATIA/Users/matt/Music/iTunes/'
+alias ituu         'cd /Users/matt/Music/iTunes/iTunes\ Music/Unknown\ Artist/Unknown\ Album/'
+
+alias boothy       'hdiutil eject -force /Volumes/HYPATIA'
+alias frost        'open /Volumes/HYPATIA/Applications/FrostWire.app/ '
+alias hypi         'open /Volumes/HYPATIA/Users/matt/Pictures/DVDs/ '
+
+alias myip         'ifconfig -a | grep -w inet | grep -v " 127" | awk "{print $2}"'
+alias lm           '/Applications/itt/idl/bin/lmgrd'
+#alias idl          '/Applications/itt/idl/bin/idl'
+
+#open up research log:
+alias rlog 'open /Users/matt/Documents/SFSU/research/EXO/NOTES/200810_NOTES.pages'
+
+#list only directories:
+alias lsdir        'ls -l | egrep "^d"'
+
+#This alias will disable PDF viewing in Safari and download them instead:
+alias downPDF	   'defaults write com.apple.Safari WebKitOmitPDFSupport -bool YES'
+alias viewPDF      'defaults write com.apple.Safari WebKitOmitPDFSupport -bool NO'
+
+#Show and Hide hidden files:
+alias showHidden   'defaults write com.apple.finder AppleShowAllFiles TRUE'
+alias hideHidden   'defaults write com.apple.finder AppleShowAllFiles FALSE'
+
+
+unalias ls
